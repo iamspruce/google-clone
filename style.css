@@ -145,6 +145,7 @@ input:focus {
 }
 .input-btn {
     margin: 18px 0px;
+    text-align: center;
 }
 .input-btn button {
     background-color: #f8f9fa;
