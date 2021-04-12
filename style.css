@@ -8,14 +8,16 @@ html {
     box-sizing: border-box;
 
 }
+html,body {
+    height: 100%;
+}
 body {
     background-color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-family: arial,sans-serif;
     color: #222;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 footer {
     margin-top: auto;
@@ -64,6 +66,33 @@ a.link {
     padding: 15px;
     white-space: nowrap;
 }
+.link:hover {
+    text-decoration: underline;
+}
+.link-hover {
+    position: relative;
+}
+.link-hover::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #000;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: rgba(60,64,67,0.08);
+    opacity: 0;
+}
+.link-hover:hover::after {
+    opacity: 1;
+}
+
 .link img {
     border-radius: 50%;
 }
@@ -87,6 +116,11 @@ a {
     border-radius: 24px;
     height: 44px;
     margin: 0 auto;
+}
+.input:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
 }
 .input-inner {
     flex: 1;
@@ -128,6 +162,12 @@ input:focus {
     cursor: pointer;
     user-select: none;
 }
+button:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
 .input-lang {
     font-size: small;
     margin-bottom: 24px;
@@ -159,17 +199,26 @@ input:focus {
     display: flex;
     flex-wrap: wrap;
 }
+
 .footer-nav {
     padding: 20px;
 }
-@media only screen and (max-width: 1200px) {
     .footer-nav {
         justify-content: space-evenly;
     }
+
+@media (min-width: 1200px) {
+    .footer-nav-1 {
+        width: auto;
+    }
 }
 .footer-nav-1 {
-    width: 100%;
     justify-content: center;
+}
+@media (max-width: 1200px) {
+    .footer-nav-1 {
+    width: 100%;
+    }
 }
 .footer-nav-2 {
     justify-content: flex-start;
