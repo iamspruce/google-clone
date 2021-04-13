@@ -107,7 +107,7 @@ a {
     width: 100%;
 }
 .input {
-    width: auto;
+    width: 100%;
     max-width: 584px;
     background: #fff;
     display: flex;
