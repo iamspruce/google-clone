@@ -107,20 +107,20 @@ a {
     text-decoration: none;
 }
     .mobile {
-        display: flex;
+        display: none;
     }
-.not-mobile {
-        display: block;
-    }
+
     @media (max-width: 499px) {
     .mobile {
-        display: block!important;
+        display: flex!important;
     }
      .not-mobile {
     display: none!important;
         }
     }
-
+.not-mobile {
+        display: block;
+    }
 /* input */
 .input-wrapper {
     padding:20px 2px 0px 2px;
