@@ -70,6 +70,7 @@ a.link {
 }
 .link:hover {
     text-decoration: underline;
+}
 .link-active {
     color: #4285f4;
     border-bottom: 2px solid #4285f4;
