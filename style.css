@@ -103,7 +103,7 @@ a {
 
 /* input */
 .input-wrapper {
-    padding: 2px;
+    padding:20px 2px 0px 2px;
     width: 100%;
 }
 .input {
