@@ -107,7 +107,7 @@ a {
     text-decoration: none;
 }
     .mobile {
-        display: none;
+        display: flex;
     }
 .not-mobile {
         display: block;
