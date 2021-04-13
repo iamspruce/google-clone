@@ -70,7 +70,10 @@ a.link {
 }
 .link:hover {
     text-decoration: underline;
-}
+.limk-active {
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
+    }
 .link-hover {
     position: relative;
 }
@@ -102,6 +105,16 @@ a {
     color: #1a0dab;
     text-decoration: none;
 }
+@media (min-width: 600px) {
+    .mobile {
+        display: none!important;
+    }
+    }
+    @media (max-width: 499px) {
+    .not-mobile {
+        display: none!important;
+    }
+    }
 
 /* input */
 .input-wrapper {
